@@ -1,0 +1,40 @@
+<odoo>
+	<record id='regis_view_form' model='ir.ui.view'>
+		<field name='name'>regis.form</field>
+		<field name='model'>student.regis</field>
+		<field name='arch' type='xml'>
+			<form string='Đăng ký tín chỉ'>
+				<sheet>
+					<group>
+						<field name='school_ids' />
+						<field name='class_list'
+							domain="[('school_id','=',school_ids)]" />
+						<field name='student_list'
+							domain="[('class_id','=',class_list)]" />
+						<field name='subject_list_regis'></field>
+					</group>
+					<group>
+						<field name='subject_list'></field>
+					</group>
+					<footer>
+						<button name='action_regis' string='REGIT'
+							class='btn-frimary' type='object'></button>
+						<button name='action_regis_update' string='UPDATE'
+							class='btn-frimary' type='object'></button>
+						<button string='Cancel' class='btn-secondary'
+							special='cancel' />
+					</footer>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id='regis_action' model='ir.actions.act_window'>
+		<field name='name'>Đăng ký Môn Học</field>
+		<field name='res_model'>student.regis</field>
+		<field name='view_mode'>form</field>
+		<field name='view_id' ref='regis_view_form'></field>
+		<field name='target'>new</field>
+	</record>
+	<menuitem id='regis_menu' name='Regis' parent='school_menu_root'
+		action='regis_action' groups='base.group_user' sequence='10' />
+</odoo>

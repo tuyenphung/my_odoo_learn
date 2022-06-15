@@ -1,0 +1,31 @@
+<odoo>
+	<record id='create_class_view_form' model='ir.ui.view'>
+		<field name='name'>create.class.form</field>
+		<field name='model'>create.class</field>
+		<field name='arch' type='xml'>
+			<form>
+				<sheet>
+					<group>
+						<field name='name'/>
+						<field name='school_id' />
+					</group>
+					<footer>
+						<button name='create_class' string='CREATE'
+	class='btn-frimary' type='object'></button>
+						<button string = 'Cancel' class='btn-secondary' special='cancel'/>
+					</footer>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id='create_class_action' model='ir.actions.act_window'>
+		<field name='name'>Tạo Lớp</field>
+		<field name='res_model'>create.class</field>
+		<field name='view_mode'>form</field>
+		<field name='view_id' ref = 'create_class_view_form'></field>
+		<field name ='target'>new</field>
+	</record>
+	<menuitem id='create_class_menu' name='Create Class'
+		parent='school_menu_root' action='create_class_action' groups='base.group_user'
+		sequence='8' />
+</odoo>

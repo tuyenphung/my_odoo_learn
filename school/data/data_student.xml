@@ -1,0 +1,156 @@
+<odoo>
+	<data>
+		<record id = 'student_1' model = 'student'>
+			<field name = 'name'>Student1</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_2' model = 'student'>
+			<field name = 'name'>Student2</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_3' model = 'student'>
+			<field name = 'name'>Student3</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_4' model = 'student'>
+			<field name = 'name'>Student4</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_5' model = 'student'>
+			<field name = 'name'>Student6</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_6' model = 'student'>
+			<field name = 'name'>Student6</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_7' model = 'student'>
+			<field name = 'name'>Student7</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_8' model = 'student'>
+			<field name = 'name'>Student8</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_9' model = 'student'>
+			<field name = 'name'>Student9</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_10' model = 'student'>
+			<field name = 'name'>Student10</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_11' model = 'student'>
+			<field name = 'name'>Student11</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_12' model = 'student'>
+			<field name = 'name'>Student12</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_13' model = 'student'>
+			<field name = 'name'>Student13</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_14' model = 'student'>
+			<field name = 'name'>Student14</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_15' model = 'student'>
+			<field name = 'name'>Student15</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_16' model = 'student'>
+			<field name = 'name'>Student16</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_17' model = 'student'>
+			<field name = 'name'>Student17</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_18' model = 'student'>
+			<field name = 'name'>Student18</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_19' model = 'student'>
+			<field name = 'name'>Student19</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_20' model = 'student'>
+			<field name = 'name'>Student20</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_21' model = 'student'>
+			<field name = 'name'>Student21</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_22' model = 'student'>
+			<field name = 'name'>Student22</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_23' model = 'student'>
+			<field name = 'name'>Student23</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_23' model = 'student'>
+			<field name = 'name'>Student23</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_23' model = 'student'>
+			<field name = 'name'>Student23</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_24' model = 'student'>
+			<field name = 'name'>Student24</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_25' model = 'student'>
+			<field name = 'name'>Student25</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_26' model = 'student'>
+			<field name = 'name'>Student26</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_27' model = 'student'>
+			<field name = 'name'>Student27</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_28' model = 'student'>
+			<field name = 'name'>Student28</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_29' model = 'student'>
+			<field name = 'name'>Student29</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_30' model = 'student'>
+			<field name = 'name'>Student30</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_31' model = 'student'>
+			<field name = 'name'>Student31</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_32' model = 'student'>
+			<field name = 'name'>Student32</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_33' model = 'student'>
+			<field name = 'name'>Student33</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_34' model = 'student'>
+			<field name = 'name'>Student34</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_35' model = 'student'>
+			<field name = 'name'>Student35</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+				<record id = 'student_36' model = 'student'>
+			<field name = 'name'>Student36</field>
+			<field name = 'dob'>1999-01-01</field>		
+		</record>
+	</data>
+</odoo>

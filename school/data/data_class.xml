@@ -1,0 +1,64 @@
+<odoo>
+	<data>
+		<record id='class_1' model='class'>
+			<field name='name'>CN01</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_1'),ref('student_2'),ref('student_3')])]"></field>
+		</record>
+		<record id='class_2' model='class'>
+			<field name='name'>PM02</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_4'),ref('student_5'),ref('student_6')])]"></field>
+		</record>
+		<record id='class_3' model='class'>
+			<field name='name'>DT03</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_7'),ref('student_8'),ref('student_9')])]"></field>
+		</record>
+		<record id='class_4' model='class'>
+			<field name='name'>CN01</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_10'),ref('student_11'),ref('student_12')])]"></field>
+		</record>
+		<record id='class_5' model='class'>
+			<field name='name'>PM02</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_13'),ref('student_14'),ref('student_15')])]"></field>
+		</record>
+		<record id='class_6' model='class'>
+			<field name='name'>DT03</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_16'),ref('student_17'),ref('student_18')])]"></field>
+		</record>
+		<record id='class_7' model='class'>
+			<field name='name'>CN01</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_19'),ref('student_20'),ref('student_21')])]"></field>
+		</record>
+		<record id='class_8' model='class'>
+			<field name='name'>PM02</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_22'),ref('student_23'),ref('student_24')])]"></field>
+		</record>
+		<record id='class_9' model='class'>
+			<field name='name'>DT03</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_25'),ref('student_26'),ref('student_27')])]"></field>
+		</record>
+		<record id='class_10' model='class'>
+			<field name='name'>CN01</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_28'),ref('student_29'),ref('student_30')])]"></field>
+		</record>
+		<record id='class_11' model='class'>
+			<field name='name'>PM02</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_31'),ref('student_32'),ref('student_33')])]"></field>
+		</record>
+		<record id='class_12' model='class'>
+			<field name='name'>DT03</field>
+			<field name='student_list'
+				eval="[(6,0,[ref('student_34'),ref('student_35'),ref('student_36')])]"></field>
+		</record>
+	</data>
+</odoo>

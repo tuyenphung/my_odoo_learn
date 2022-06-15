@@ -1,0 +1,65 @@
+<odoo>
+	<data>
+		<record id='teacher_1' model='teacher'>
+			<field name='name'>Tuyến</field>
+			<field name='dob'>1997-01-07</field>
+			<field name='school_id' ref='school.school_1'></field>
+		</record>
+		<record id='teacher_2' model='teacher'>
+			<field name='name'>Duyệt</field>
+			<field name='dob'>1999-01-07</field>
+			<field name='school_id' ref='school.school_1'></field>
+		</record>
+		<record id='teacher_3' model='teacher'>
+			<field name='name'>Bình</field>
+			<field name='dob'>1999-01-07</field>
+			<field name='school_id' ref='school.school_1'></field>
+		</record>
+		<record id='teacher_4' model='teacher'>
+			<field name='name'>Loan</field>
+			<field name='dob'>1997-02-17</field>
+			<field name='school_id' ref='school.school_2'></field>
+		</record>
+		<record id='teacher_5' model='teacher'>
+			<field name='name'>Sơn</field>
+			<field name='dob'>1996-01-07</field>
+			<field name='school_id' ref='school.school_2'></field>
+		</record>
+		<record id='teacher_6' model='teacher'>
+			<field name='name'>Vượng</field>
+			<field name='dob'>1991-01-07</field>
+			<field name='school_id' ref='school.school_2'></field>
+		</record>
+		<record id='teacher_7' model='teacher'>
+			<field name='name'>Đông</field>
+			<field name='dob'>1999-01-07</field>
+			<field name='school_id' ref='school.school_3'></field>
+		</record>
+		<record id='teacher_8' model='teacher'>
+			<field name='name'>Đức</field>
+			<field name='dob'>1999-01-07</field>
+			<field name='school_id' ref='school.school_3'></field>
+		</record>
+		<record id='teacher_9' model='teacher'>
+			<field name='name'>Mai</field>
+			<field name='dob'>2000-01-07</field>
+			<field name='school_id' ref='school.school_3'></field>
+		</record>
+		<record id='teacher_10' model='teacher'>
+			<field name='name'>teacher10</field>
+			<field name='dob'>1997-01-07</field>
+			<field name='school_id' ref='school.school_4'></field>
+		</record>
+		<record id='teacher_11' model='teacher'>
+			<field name='name'>teacher11</field>
+			<field name='dob'>1997-01-07</field>
+			<field name='school_id' ref='school.school_4'></field>
+		</record>
+		<record id='teacher_12' model='teacher'>
+			<field name='name'>teacher12</field>
+			<field name='dob'>1997-01-07</field>
+			<field name='school_id' ref='school.school_4'></field>
+		</record>
+	</data>
+
+</odoo>

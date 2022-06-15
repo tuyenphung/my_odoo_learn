@@ -1,0 +1,30 @@
+<odoo>
+	<data>
+		<record id='subject_1' model='subject'>
+			<field name='name'>Python</field>
+			<field name='author'>Viindoo</field>
+			<field name='credit'>3</field>
+		</record>
+		<record id='subject_2' model='subject'>
+			<field name='name'>Building Module</field>
+			<field name='author'>Viindoo</field>
+			<field name='credit'>5</field>
+		</record>
+		<record id='subject_3' model='subject'>
+			<field name='name'>ORM Basic</field>
+			<field name='author'>Viindoo</field>
+			<field name='credit'>6</field>
+		</record>
+		<record id='subject_4' model='subject'>
+			<field name='name'>ORM Advanced
+			</field>
+			<field name='author'>Viindoo</field>
+			<field name='credit'>10</field>
+		</record>
+		<record id='subject_5' model='subject'>
+			<field name='name'>Odoo Deverlopment</field>
+			<field name='author'>Viindoo</field>
+			<field name='credit'>20</field>
+		</record>
+	</data>
+</odoo>

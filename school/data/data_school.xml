@@ -1,0 +1,41 @@
+<odoo>
+	<data>
+		<record id='school_1' model='school'>
+			<field name='name'>Học viện Công Nghệ Bưu Chính Viễn Thông</field>
+			<field name='type'>private</field>
+			<field name='add'>Hà Đông , Hà Nội</field>
+			<field name='phone'>+84988450129</field>
+			<field name='email'>ptit@edu.vn</field>
+			<field name='class_list'
+				eval="[(6,0,[ref('class_1'),ref('class_2'),ref('class_3')])]"></field>
+		</record>
+		<record id='school_2' model='school'>
+			<field name='name'>Đại Học Bách Khoa Hà Nội</field>
+			<field name='type'>public</field>
+			<field name='add'>Hai Bà Trưng , Hà Nội</field>
+			<field name='phone'>+84844711997</field>
+			<field name='email'>hust@edu.vn</field>
+			<field name='class_list'
+				eval="[(6,0,[ref('class_4'),ref('class_5'),ref('class_6')])]"></field>
+		</record>
+		<record id='school_3' model='school'>
+			<field name='name'>Đại Học Xây Dựng Hà Nội</field>
+			<field name='type'>public</field>
+			<field name='add'>Hai Bà Trưng Hà Nội</field>
+			<field name='phone'>+84392795666</field>
+			<field name='email'>nuce@edu.vn</field>
+			<field name='class_list'
+				eval="[(6,0,[ref('class_7'),ref('class_8'),ref('class_9')])]"></field>
+		</record>
+		<record id='school_4' model='school'>
+			<field name='name'>Đại Học Kiến Trúc Hà Nội</field>
+			<field name='type'>private</field>
+			<field name='add'>Hà Đông , Hà Nội</field>
+			<field name='phone'>+84868610701</field>
+			<field name='email'>hau@edu.vn</field>
+			<field name='class_list'
+				eval="[(6,0,[ref('class_10'),ref('class_11'),ref('class_12')])]"></field>
+		</record>
+	</data>
+
+</odoo>

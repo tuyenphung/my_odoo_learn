@@ -1,0 +1,258 @@
+<odoo>
+	<record id='test_view_tree' model='ir.ui.view'>
+		<field name='name'>test.tree</field>
+		<field name='model'>test</field>
+		<field name='arch' type='xml'>
+			<tree>
+				<field name='name' />
+				<field name='email' />
+				<field name='active' />
+				<field name='state'></field>
+				<field name='lever' />
+				<field name='email'></field>
+				<field name='email_text' />
+				<field name='date_start_day'></field>
+				<field name='date_start_add' />
+				<field name='date_start'></field>
+				<field name='date_start_context_today' />
+				<field name='test_end_of' />
+				<field name='date_subtract' />
+			</tree>
+		</field>
+	</record>
+	<record id='test_view_form' model='ir.ui.view'>
+		<field name='name'>test.form</field>
+		<field name='model'>test</field>
+		<field name='arch' type='xml'>
+			<form>
+				<sheet>
+					<group>
+						<field name='name' />
+						<fiel2d name='email' />
+						<field name='active'></field>
+						<field name='state'></field>
+						<field name='lever' />
+						<field name='email'></field>
+						<field name='email_text' />
+						<field name='date_start_day'></field>
+						<field name='date_start_add' />
+						<field name='date_start'></field>
+						<field name='date_start_context_today' />
+						<field name='test_end_of' />
+						<field name='date_subtract' />
+						<field name='test_float' />
+						<field name='star' />
+						<field name='document' />
+						<field name='code' />
+
+					</group>
+				</sheet>
+			</form>
+		</field>
+
+	</record>
+	<record id='orm_view_form' model='ir.ui.view'>
+		<field name='name'>test_orm.form</field>
+		<field name='model'>test.orm</field>
+		<field name='arch' type='xml'>
+			<form>
+
+				<group col='14'>
+					<group>
+						<h6>CREATE ORM</h6>
+						<field name='button_create' />
+					</group>
+					<group>
+						<h6>COPY ORM</h6>
+						<field name='button_copy' />
+					</group>
+					<group>
+						<h6>GET_DEFAULT ORM</h6>
+						<field name='button_default_get' />
+					</group>
+					<group>
+						<h6>NAME_CREATE ORM</h6>
+						<field name='button_name_create' />
+					</group>
+					<group>
+						<h6>SEARCH_ORM</h6>
+						<field name='button_search' />
+					</group>
+					<group>
+						<h6>SEARCH_COUNT_ORM</h6>
+						<field name='button_search_count' />
+					</group>
+					<group>
+						<h6>NAME_SEARCH_ORM</h6>
+						<field name='button_name_search' />
+					</group>
+					<group>
+						<h6>WRITE_ORM</h6>
+						<field name='button_write' />
+					</group>
+					<group>
+						<h6>BROWSE_ORM</h6>
+						<field name='button_browse' />
+					</group>
+					<group>
+						<h6>READ_ORM</h6>
+						<field name='button_read' />
+					</group>
+					<group>
+						<h6>FILTERED_ORM</h6>
+						<field name='button_filtered' />
+					</group>
+					<group>
+						<h6>FILTERED_DOMAIN_ORM</h6>
+						<field name='button_filtered_domain' />
+					</group>
+					<group>
+						<h6>MAPPED_ORM</h6>
+						<field name='button_mapped' />
+					</group>
+				</group>
+				<group>
+					<group>
+						<field name='create_orm_char'
+							attrs="{'invisible':[('button_create','=',False)]}" />
+						<field name='create_val_list'
+							attrs="{'invisible':[('button_create','=',False)]}" />
+						<button name='create_orm' string='CREATE ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_create','=',False)]}"></button>
+
+
+						<field name='copy_orm_char'
+							attrs="{'invisible':[('button_copy','=',False)]}" />
+						<button name='copy_orm' string='COPY ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_copy','=',False)]}"></button>
+
+						<field name='default_get_char'
+							attrs="{'invisible':[('button_default_get','=',False)]}" />
+						<button name='default_get_orm' string='DEFAULT_GET ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object'
+							attrs="{'invisible':[('button_default_get','=',False)]}"></button>
+
+						<field name='name_create_char'
+							attrs="{'invisible':[('button_name_create','=',False)]}" />
+						<button name='name_create_orm' string='NAME_CREATE ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object'
+							attrs="{'invisible':[('button_name_create','=',False)]}"></button>
+
+						<field name='search_orm_char'
+							attrs="{'invisible':[('button_search','=',False)]}" />
+						<field name='search_domain'
+							attrs="{'invisible':[('button_search','=',False)]}" />
+						<field name='search_offset'
+							attrs="{'invisible':[('button_search','=',False)]}" />
+						<field name='search_limit'
+							attrs="{'invisible':[('button_search','=',False)]}" />
+						<field name='search_order'
+							attrs="{'invisible':[('button_search','=',False)]}" />
+						<field name='search_countt'
+							attrs="{'invisible':[('button_search','=',False)]}" />
+						<button name='search_orm' string='SEARCH ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_search','=',False)]}"></button>
+
+						<field name='name_search_orm_char'
+							attrs="{'invisible':[('button_name_search','=',False)]}" />
+						<button name='name_search_orm' string='NAME SEARCH ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object'
+							attrs="{'invisible':[('button_name_search','=',False)]}"></button>
+
+
+						<field name='write_orm_char'
+							attrs="{'invisible':[('button_write','=',False)]}" />
+						<button name='write_orm' string='WRITE ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_write','=',False)]}"></button>
+
+						<field name='browse_orm_char'
+							attrs="{'invisible':[('button_browse','=',False)]}" />
+						<button name='browse_orm' string='BROWSE ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_browse','=',False)]}"></button>
+
+						<field name='search_count_orm_char'
+							attrs="{'invisible':[('button_search_count','=',False)]}" />
+						<button name='search_count_orm' string='SEARCH COUNT ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object'
+							attrs="{'invisible':[('button_search_count','=',False)]}"></button>
+
+
+						<field name='read_orm_char'
+							attrs="{'invisible':[('button_read','=',False)]}" />
+						<button name='read_orm' string='READ ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_read','=',False)]}"></button>
+
+						<field name='filtered_orm_char'
+							attrs="{'invisible':[('button_filtered','=',False)]}" />
+						<button name='filtered_orm' string='FILTERED ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object'
+							attrs="{'invisible':[('button_filtered','=',False)]}"></button>
+
+						<field name='filtered_domain_orm_char'
+							attrs="{'invisible':[('button_filtered_domain','=',False)]}" />
+						<button name='filtered_domain_orm'
+							string='FILTERED_DOMAIN ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object'
+							attrs="{'invisible':[('button_filtered_domain','=',False)]}"></button>
+
+						<field name='mapped_orm_char'
+							attrs="{'invisible':[('button_mapped','=',False)]}" />
+						<button name='mapped_orm' string='MAPPED ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' attrs="{'invisible':[('button_mapped','=',False)]}"></button>
+						<button name='orm' string='depend_context ORM'
+							class='btn btn-sm btn-primary js_unreconcile_payment float-left'
+							type='object' ></button>
+					</group>
+					<group>
+						<div>
+							<h4>
+								<group>
+									<field name='running_char' />
+								</group>
+							</h4>
+							<h1>
+								<field name='return_char' />
+							</h1>
+							<h3>
+								<field name='orm_return' />
+							</h3>
+						</div>
+					</group>
+				</group>
+
+
+			</form>
+		</field>
+
+	</record>
+	<record id='test_action' model='ir.actions.act_window'>
+		<field name='name'>Test</field>
+		<field name='res_model'>test</field>
+		<field name='view_mode'>tree,form</field>
+	</record>
+	<record id='test_orm_action' model='ir.actions.act_window'>
+		<field name='name'>Test ORM</field>
+		<field name='res_model'>test.orm</field>
+		<field name='view_mode'>form</field>
+		<field name='view_id' ref='orm_view_form'></field>
+		<field name='target'>inline</field>
+	</record>
+	<menuitem id='test_menu' name='Test' parent='school_menu_root'
+		action='test_action' groups='base.group_user' sequence='30' />
+	<menuitem id='orm_menu' name='TEST ORM'
+		parent='school_menu_root' action='test_orm_action'
+		groups='base.group_user' sequence='31' />
+</odoo>

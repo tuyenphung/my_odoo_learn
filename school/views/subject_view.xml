@@ -1,0 +1,37 @@
+<odoo>
+	<record id='subject_view_tree' model='ir.ui.view'>
+		<field name='name'>subject.tree</field>
+		<field name='model'>subject</field>
+		<field name='arch' type='xml'>
+			<tree string='Danh sách học sinh'>
+				<field name='name' />
+				<field name='author' />
+				<field name='credit' />
+			</tree>
+		</field>
+	</record>
+
+	<record id='student_view_form' model='ir.ui.view'>
+		<field name='name'>subject.form</field>
+		<field name='model'>subject</field>
+		<field name='arch' type='xml'>
+			<form>
+				<sheet>
+					<group>
+						<field name='name' />
+						<field name='author' />
+						<field name='credit' />
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id='subject_action' model='ir.actions.act_window'>
+		<field name='name'>Subject</field>
+		<field name='res_model'>subject</field>
+		<field name='view_mode'>tree,form</field>
+	</record>
+	<menuitem id='subject_menu' name='Subject'
+		parent='school_menu_root' action='subject_action' groups='group_school_manager'
+		sequence='5' />
+</odoo>

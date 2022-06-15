@@ -1,0 +1,157 @@
+<odoo>
+
+	<record id='school_view_tree' model='ir.ui.view'>
+		<field name='name'>school.tree</field>
+		<field name='model'>school</field>
+		<field name='arch' type='xml'>
+			<tree string='Danh sách trường học'>
+				<field name='name' />
+				<field name='email' />
+				<field name='type' />
+				<field name='phone' />
+				<field name='add' />
+				<field name='price' />
+				<field name='dated' />
+				<field name='days' />
+				<field name='name_context' />
+				<field name='parent_path' />
+				<field name='test_group' />
+			</tree>
+		</field>
+	</record>
+	<record id='school_view_form' model='ir.ui.view'>
+		<field name='name'>school.form</field>
+		<field name='model'>school</field>
+		<field name='arch' type='xml'>
+			<form>
+				<sheet>
+					<div>
+						<h1>
+							<field name='name'></field>
+						</h1>
+					</div>
+					<group>
+						<group>
+							<field name='email' />
+							<field name='type' />
+							<field name='phone' />
+							<field name='ahihi'></field>
+							<field name='date_start' />
+							<field name='date_end' />
+							<field name='test_group' />
+
+
+						</group>
+						<group>
+							<field name='add' />
+							<field name='price' />
+							<field name='dated' />
+							<field name='days' />
+						</group>
+						<group>
+							<field name='class_list'></field>
+						</group>
+						<group>
+							<field name='teacher_list'></field>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id='school_view_calendar' model='ir.ui.view'>
+		<field name='name'>school.calendar</field>
+		<field name='model'>school</field>
+		<field name='arch' type='xml'>
+			<calendar string="School Calendar" date_start="date_start"
+				date_stop="date_end" color="add">
+				<field name="name" />
+
+			</calendar>
+
+		</field>
+	</record>
+	<record id='school_view_search' model='ir.ui.view'>
+		<field name='name'>school.search</field>
+		<field name='model'>school</field>
+		<field name='arch' type='xml'>
+
+			<search string="School Search">
+				<field name="name" />
+				<field name="type" />
+				<field name="phone" />
+				<separator />
+				<filter string="dan lap" name="type"
+					domain="[('type', '=', 'private')]" />
+				<filter string="cong lap" name="type"
+					domain="[('type', '=', 'public')]" />
+				<group expand="0" string="Group By">
+
+					<filter name="name" string="Name" domain="[]"
+						context="{'group_by': 'name'}" />
+					<filter name="type" string="Type" domain="[]"
+						context="{'group_by': 'type'}" />
+					<filter name="phone" string="Phone" domain="[]"
+						context="{'group_by': 'phone'}" />
+				</group>
+				<separator />
+			</search>
+		</field>
+	</record>
+	<record id='school_view_graph' model='ir.ui.view'>
+		<field name='name'>school.graph</field>
+		<field name='model'>school</field>
+		<field name='arch' type='xml'>
+			<graph string="School">
+				<field name='name' />
+				<field name='email'></field>
+			</graph>
+		</field>
+	</record>
+	<record id='school_view_kanban' model='ir.ui.view'>
+		<field name='name'>school.kanban</field>
+		<field name='model'>school</field>
+		<field name='arch' type='xml'>
+			<kanban class='o_kanban_mobile'>
+				<field name='name' />
+
+				<templates>
+					<t t-name="kanban-box">
+						<div t-attf-class="oe_kanban_global_click">
+							<div class="row">
+								<div class="col-6">
+									<strong>
+										<field name="name" />
+									</strong>
+								</div>
+								<div class="col-6 text-right">
+									<span class="badge badge-pill">
+										<t t-esc="record.name.value" />
+									</span>
+								</div>
+							</div>
+							<!-- <div> <strong>Type: </strong><t t-esc="record.add.value"/> </div> -->
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+	<record id='school_action' model='ir.actions.act_window'>
+		<!-- phải khai báo action trước menu nếu không sẽ không làm gì cả(không 
+			hiện menu) có 6 kiểu action : Window Actions (ir.actions.act_window) URL 
+			Actions (ir.actions.act_url) Server Actions (ir.actions.server) Report Actions 
+			(ir.actions.report) Client Actions (ir.actions.client) Automated Actions 
+			(ir.cron) -->
+		<field name='name'>school</field>
+		<field name='res_model'>school</field>
+		<field name='view_mode'>calendar,tree,form,search,graph,kanban</field>
+	</record>
+	<menuitem id='school_menu_root' name='School'></menuitem>
+	<menuitem id='school_menu' name='school'
+		parent='school_menu_root' action='school_action'
+		groups='base.group_user' sequence='1' />
+	<!-- <record id='school_menu' model='ir.ui.menu'> <field name="name">School.menu</field> 
+		<field name="sequence" eval="1" /> <field name='action' ref='school_action'></field> 
+		<field name="groups_id" eval="[(4,ref('base.group_user'))]" /> </record> -->
+</odoo>

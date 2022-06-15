@@ -1,0 +1,41 @@
+<odoo>
+	<record id='teacher_view_tree' model='ir.ui.view'>
+		<field name='name'>teacher.tree</field>
+		<field name='model'>teacher</field>
+		<field name='arch' type='xml'>
+			<tree string='Danh sách giảng viên'>
+				<field name='name' />
+				<field name='age' />
+				<field name='school_id'></field>
+			</tree>
+		</field>
+	</record>
+
+	<record id='teacher_view_form' model='ir.ui.view'>
+		<field name='name'>teacher.form</field>
+		<field name='model'>teacher</field>
+		<field name='arch' type='xml'>
+			<form>
+				<sheet>
+					<group>
+						<field name='name' />
+						<field name='dob' />
+						<field name='age' />
+						<field name='school_id'></field>
+					</group>
+					<group>
+						<field name='class_list'></field>
+					</group>
+				</sheet>
+			</form>
+		</field>
+
+	</record>
+	<record id='teacher_action' model='ir.actions.act_window'>
+		<field name='name'>Teacher</field>
+		<field name='res_model'>teacher</field>
+		<field name='view_mode'>tree,form</field>
+	</record>
+	<menuitem id='teacher_menu' name='Teacher' parent='school_menu_root'
+		action='teacher_action' groups='base.group_user' sequence='6' />
+</odoo>
